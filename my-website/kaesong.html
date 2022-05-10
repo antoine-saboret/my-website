@@ -1,0 +1,63 @@
+<html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Kaesong</title>
+	<link rel="stylesheet" type="text/css" href="citystyle.css" media="all" />
+</head>
+
+<body>
+	<h1>Kaesong 🏯</h1>
+	<h2></h2>
+	<h2>Outil de propagande pour attirer les sud-coréens, haut lieu du touriste nord-coréen avec la DMZ et ville à l'achitecture communiste colorée, Kaesong est l'OVNI au sein du paysage urbain nord-coréen.</h2>
+
+<div id="text">
+	<p>Kaesong est une ville située au Sud-Est de Corée du Nord. Elle est caractérisée par son patrimoine historique ainsi que sa proximité avec la frontière sud-coréenne. C’est donc un lieu priviligié du tourisme nord-coréen.</p>
+	<p></p>
+	<p>L’histoire de Kaesong est passionnante puisqu’elle est située proche de Séoul et a d’ailleurs appartenu à la Corée du Sud avant la guerre de Corée. On y retrouve depuis une architecture typique du communisme mais colorée avec l’ancien plus grande mas (pour drapeau) du monde afin de donner envie au sud-coréen de venir en Corée du Nord. Kaesong est donc un outil de propagande actif pour le gouvernement nord-coréen.</p>
+	<p></p>
+	<p>En vous rendant à la DMZ (Demilitarized Zone, en français, zone démilitarisée), dans les extérieurs de Kaesong, vous aller découvrir le bâtiment des négociations entre l’ONU et la Corée du Nord, où un militaire nord-coréen vous affirmera que la Corée du Nord à gagner cette guerre et que les Etats-Unis ont violés les accords d’armistice 815 000 fois ! Evidemment, chaque belligérant revendique la victoire. Par ailleurs, vous pourrez voir de vos propres yeux, les bâtiments des Nations Unis ainsi que la dalle de démarcation de la frontière entre les deux Corées.</p>
+	<p></p>
+	<p>Vous pourrez également découvrir la zone industrielle de Kaesong qui est une zone de coopération entre les deux Corées. Il n’y a aucune ressemblance entre ce lieu et le reste de la Corée du Nord puisque l’influence capitaliste de la Corée du Sud se fait ressentir avec la présence de marque internationale. C’est la seule zone de Corée du Nord qui est directement relié à la Corée du Sud. La zone est très surveillée militairement mais vaut vraiment le coup d’œil.</p>
+	<p></p>
+	<p>Le passé historique de la ville durant la dynastie Koryo (918-1392) en fait l'un des centres touristiques les plus réputés de Corée du Nord. Les maisons à bas étage de la ville, de style coréen, tranchent avec l'architecture monumentale de la capitale Pyongyang. Les touristes peuvent loger dans deux hôtels, l'hôtel Janamsan et l'hôtel populaire Kaesong, de style traditionnel. À 14 km au sud-ouest de Kaesong se trouve le tombeau du roi Kongmin, trente-et-unième roi de la dynastie Koryŏ. Sur la route qui conduit aux chutes de Pakyon le voyageur accède au tombeau du roi Wang Kon (877-943), fondateur de la dynastie Koryŏ. Les sites naturels du mont Songak sont également situés à proximité de Kaesong. Parmi les autres lieux touristiques on y trouve également le pavillon Taeung dans le temple de Kwanum et l'université médiévale de Songgyungwan.</p>
+	<p></p>
+	<p>Petite ville il y a encore quelques années, Kaesong est devenue une géante du tourisme, dû à sa proximité avec la Corée du Sud. C’est un passage quasi-incontournable pour toute personne voulant se rendre en Corée du Nord !</p>
+</div>
+<h2></h2>
+<h2>Quelques photos de Kaesong</h2>
+<div class="photos">
+  	<img class="image" src="images/kaesong-1.jpg" style="width:100%">
+  	<img class="image" src="images/kaesong-2.jpg" style="width:100%">
+  	<img class="image" src="images/kaesong-3.jpg" style="width:100%">
+  	<img class="image" src="images/kaesong-4.jpg" style="width:100%">
+	<p></p>
+  	<button class="buton" onclick="plusDivs(-1)">&#10094;</button>
+  	<button class="buton" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("image");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<a href="index.html" class="buton">Retour à l'acceuil</a>
+<h1></h1>
+<a href="pyongyang.html" class="buton">Plus d'informations sur Pyongyang</a>
+<h1></h1>
+<a href="chongjin.html" class="buton">Plus d'informations sur Chongjin</a>

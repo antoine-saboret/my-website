@@ -1,0 +1,57 @@
+<html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Chongjin</title>
+	<link rel="stylesheet" type="text/css" href="citystyle.css" media="all" />
+</head>
+
+<body>
+	<h1>Chongjin 🏭</h1>
+	<h2></h2>
+	<h2>Contraste de la politique nord-coréene, Chongjin, grande ville industrielle du nord-est, montre la réalité de la pauvreté des coréens vivant hors de la capitale.</h2>
+
+<div id="text">
+	<p>Chongjin fait partie des cinq plus grandes villes de Corée du Nord. Situé près des 19km de frontière avec la Russie, où l’on retrouve Vladivostok, Chongjin pourrait être assimilé à une ville importante dans le domaine touristique. Et pourtant, c’est bien sur ce sujet que la différence entre les autres villes nord-coréenne et Pyongyang s’observe.</p>
+	<p></p>
+	<p>Aujourd’hui, Chongjin ressemble plus à une ville soviétique des années 80 qu’une ville du XXIème siècle. L’organisation touristique de Corée du Nord essaye de ne pas mettre en avant la pauvreté en campagne, bien qu’elle soit réelle notamment dû à la famine ayant touché le pays à la fin du XXème siècle. A l’arrivé à Chongjin, on remarque directement la différence de richesse et de développement avec Pyongyang. Les nord-coréens vivants dans une ville autre que Pyongyang ressemblent à une classe sociale moyenne. Ils vivent de leur minime salaire obtenu dans les usines de sidérurgie ou grâce à l’agriculture. Les montagnes Chilbo, situés à proximité de Chongjin en face de la mer, ainsi que le temple Kaesim, sur le mont Pothak, construit en 826 représentent un intérêt touristique.</p>
+	<p></p>
+	<p>Ainsi, Chongjin est donc une ville hors du temps de par son développement réduit et ses différences avec Pyongyang mais représente un réel intérêt touristique avec ses montagnes qui l’entoure et son patrimoine culturel.</p>
+</div>
+<h2></h2>
+<h2>Quelques photos de Chongjin</h2>
+<div class="photos">
+  	<img class="image" src="images/chongjin-1.jpg" style="width:100%">
+  	<img class="image" src="images/chongjin-2.jpg" style="width:100%">
+  	<img class="image" src="images/chongjin-3.jpg" style="width:100%">
+  	<img class="image" src="images/chongjin-4.jpg" style="width:100%">
+	<p></p>
+  	<button class="buton" onclick="plusDivs(-1)">&#10094;</button>
+  	<button class="buton" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("image");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<a href="index.html" class="buton">Retour à l'acceuil</a>
+<h1></h1>
+<a href="pyongyang.html" class="buton">Plus d'informations sur Pyongyang</a>
+<h1></h1>
+<a href="kaesong.html" class="buton">Plus d'informations sur Kaesong</a>

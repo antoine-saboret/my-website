@@ -1,0 +1,58 @@
+<html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Pyongyang</title>
+	<link rel="stylesheet" type="text/css" href="citystyle.css" media="all" />
+</head>
+
+<body>
+	<h1>Pyongyang 🏬</h1>
+	<h2></h2>
+	<h2>Capitale de la dictature la plus fermée, nous vous proposons de découvrir Pyongyang, modèle du régime nord-coréen, qui tente de cacher le retard de développement des campagnes.</h2>
+</body>
+
+<div id="text">
+	<p>Capitale de la Corée du Nord depuis son indépendance le 9 Septembre 1948, Pyongyang est devenue, depuis ces dernières années, l'étendard d'une Corée du Nord qui se modernise.</p>
+	<p></p>
+	<p>En centre-ville, on retrouve des monuments à la gloire du régime, comme les célèbres statures du grand-père et du père de l'actuel dirgeant du pays, Kim Jong-Un : Kim Il-Sung et Kim Jong-Il. Bien que l'on pourrait croire que dans un tel pays, les monuments architecturaux ne soient que secondaires, bien au contraire, ils servent la forte propagande du régime. La tour du Juche, le palais du Soleil Kumsusan, l'arc de triomphe de Kim Il-sung, l'arche de la Réunification et la tombe de Jumong contribuent au maintien d’une propagande constante sur la population. Le radioréveil commun et les haut-parleurs diffusant les messages de propagande contribuent également à une propagande bien ficelée, sans pour autant être des monuments touristiques.</p>
+	<p></p>
+	<p>Aujourd’hui, Pyongyang se développe de plus en plus avec ses quartiers d’habitation moderne, offert par l’Etat au citoyen. Mais, bien que cela puisse paraitre comme un acte généreux de la part du gouvernement nord-coréen, cela cache la réalité de l’extérieur de Pyongyang, bien différent et largement sous développé par rapport à la capitale. Il est également important de préciser que seuls les populations les plus proches du régime et considérées comme respectant le régime peuvent espérer vivre dans la capitale nord-coréenne. Ainsi, Pyongyang n’est qu’un panneau géant pour les touristes et la population considérée comme modèle par le régime, afin d’éviter de mettre en avant la misère des campagnes. Au final, cette ville qui tente de montrer qu’elle peut rivaliser avec son opposée sud-coréenne Séoul, ne fait que nous rappeler que les inégalités politiques et économiques persistant entre les deux pays.</p>
+</div>
+<h2></h2>
+<h2>Quelques photos de Pyongyang</h2>
+<div class="photos">
+  	<img class="image" src="images/pyongyang-1.jpg" style="width:100%">
+  	<img class="image" src="images/pyongyang-2.jpg" style="width:100%">
+  	<img class="image" src="images/pyongyang-3.jpg" style="width:100%">
+  	<img class="image" src="images/pyongyang-4.jpg" style="width:100%">
+	<p></p>
+  	<button class="buton" onclick="plusDivs(-1)">&#10094;</button>
+  	<button class="buton" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("image");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<a href="index.html" class="buton">Retour à l'acceuil</a>
+<h1></h1>
+<a href="chongjin.html" class="buton">Plus d'informations sur Chongjin</a>
+<h1></h1>
+<a href="kaesong.html" class="buton">Plus d'informations sur Kaesong</a>
